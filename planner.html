@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Henry Muoneke</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>Henry Muoneke</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html" class="active">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Academic Planner</h1>
+    <p>Manage your assignments, study sessions, and academic goals.</p>
+</section>
+
+<section class="planner-container">
+    <div class="planner-grid">
+        <div class="planner-panel">
+            <div class="task-input-section">
+                <input type="text" id="taskInput" placeholder="Enter a new academic task...">
+                <input type="date" id="dueDate" aria-label="Task due date">
+                <select id="prioritySelect" aria-label="Task priority">
+                    <option value="High">High Priority</option>
+                    <option value="Medium" selected>Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+                </select>
+                <button id="addTaskBtn" onclick="addTask()">Add Task</button>
+            </div>
+
+            <div class="task-stats">
+                <div class="stat-card">
+                    <h3 id="totalTasks">0</h3>
+                    <p>Total Tasks</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="completedTasks">0</h3>
+                    <p>Completed Tasks</p>
+                </div>
+            </div>
+
+            <div class="task-controls">
+                <button class="filter-btn active" onclick="setFilter('all')">All Tasks</button>
+                <button class="filter-btn" onclick="setFilter('pending')">Pending</button>
+                <button class="filter-btn" onclick="setFilter('completed')">Completed</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="planner-panel">
+            <div class="about-card">
+                <h2>Semester Course Plan</h2>
+                <table class="course-table">
+                    <tr>
+                        <th>Course</th>
+                        <th>Credits</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Web Technologies</td>
+                        <td>3</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Cybersecurity Fundamentals</td>
+                        <td>4</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Networking Labs</td>
+                        <td>3</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures</td>
+                        <td>3</td>
+                        <td>Planned</td>
+                    </tr>
+                </table>
+                <p class="course-summary">Track course progress, exams, and project deadlines for a balanced semester.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Academic Goals</h2>
+                <ul>
+                    <li>Finish assignments early and review material daily.</li>
+                    <li>Update the planner after every class or study session.</li>
+                    <li>Allocate time for cybersecurity reading and practice labs.</li>
+                    <li>Use the task filter to keep deadlines visible.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Henry Muoneke | Cybersecurity Portfolio</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

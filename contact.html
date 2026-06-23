@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Henry Muoneke</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>Henry Muoneke</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Contact Me</h1>
+    <p>Feel free to send a message.</p>
+</section>
+
+<section class="contact-container">
+    <div class="contact-info">
+        <div class="info-card">
+            <h3>Email</h3>
+            <p><a href="mailto:h.muoneke5125@miva.edu.ng">h.muoneke5125@miva.edu.ng</a></p>
+        </div>
+        <div class="info-card">
+            <h3>Phone</h3>
+            <p>08101309649</p>
+        </div>
+        <div class="info-card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/hmuoneke5125-star" target="_blank" rel="noreferrer">github.com/hmuoneke5125-star</a></p>
+        </div>
+    </div>
+
+    <form id="contactForm">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" placeholder="Write your message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p id="formMessage"></p>
+
+</section>
+
+<footer>
+    <p>© 2025 Henry Muoneke | Cybersecurity Portfolio</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
